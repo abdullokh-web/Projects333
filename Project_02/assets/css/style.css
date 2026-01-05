@@ -1,0 +1,136 @@
+/* ---------- COLORS ---------- */
+:root {
+    --bg-black: #0b0b0b;
+    --card-black: #121212;
+    --border: #1f1f1f;
+    --white: #ffffff;
+    --muted: #b5b5b5;
+}
+
+/* ---------- GLOBAL ---------- */
+body {
+    background: var(--bg-black);
+    color: var(--white);
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+    background: #000 !important;
+    border-bottom: 1px solid var(--border);
+}
+
+.nav-link {
+    color: var(--muted);
+    cursor: pointer;
+}
+
+.nav-link.active {
+    color: var(--white);
+    font-weight: 600;
+}
+
+/* ---------- CARD ---------- */
+.card {
+    background: var(--card-black);
+    border: 1px solid var(--border);
+}
+
+/* ---------- INPUT ---------- */
+input {
+    background: #000 !important;
+    border: 1px solid var(--border) !important;
+    color: var(--white) !important;
+}
+
+input::placeholder {
+    color: #777;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn-primary,
+.btn-download {
+    background: #fff !important;
+    color: #000 !important;
+    border: none !important;
+}
+
+.btn-primary:hover,
+.btn-download:hover,
+.btn-download:focus,
+.btn-download:active {
+    background: #e6e6e6 !important;
+    color: #000 !important;
+    box-shadow: none !important;
+}
+
+/* ---------- DROPDOWN ---------- */
+.dropdown-menu {
+    background: #000;
+    border: 1px solid var(--border);
+}
+
+.dropdown-item {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+.dropdown-item:hover {
+    background: #1a1a1a !important;
+}
+
+/* ---------- MEDIA ---------- */
+img,
+video {
+    border-radius: 12px;
+}
+
+/* ---------- LOADER ---------- */
+.spinner-border {
+    color: #fff;
+}
+
+/* ---------- FOOTER ---------- */
+.site-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid var(--border);
+    background: var(--card-black);
+    z-index: 1030;
+    padding: .9rem 0;
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-footer small {
+    font-size: 1.05rem;
+    color: var(--white);
+}
+
+.site-footer .author-link {
+    color: var(--white);
+    font-weight: 600;
+    transition: color .15s ease, transform .15s ease;
+}
+
+.site-footer .author-link:hover,
+.site-footer .author-link:focus {
+    color: #1e90ff;
+    /* accent color on hover */
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+body {
+    padding-bottom: 96px;
+    /* make room for larger fixed footer */
+}
